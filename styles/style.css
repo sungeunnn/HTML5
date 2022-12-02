@@ -70,9 +70,14 @@ body {
 /*푸터*/
 .footer {
   background: gray;
+  width: 940px;
+  margin: 0 auto;
 }
 /*푸터 이너*/
 .footer-inner{
   background: silver;
   height: 15vh;
+  position: relative;
+  top: -10px;
+  left: -10px;
 }
