@@ -103,7 +103,7 @@ body {
 }
 
 .menu {
-  border-top:2px solid currentColor;
+  border-top: 2px solid currentColor;
   background: #e85e2c
     linear-gradient(
       to bottom,
@@ -114,20 +114,30 @@ body {
       #ef9126 100%
     );
   border-radius: 0 0 5px 5px;
-  display: flow-root;
   padding-left: 230px;
+  height: 47px;
 }
 
-
-.menu-item{
-  background-color: aqua;
+.menu-item {
   float: left;
 }
 
-.sub-menu{
+.menu-button {
+  border: 0;
+  background: transparent;
+  padding: 0 23px;
+  line-height: 45px;
+  border-left: 2px solid #fff;
+  font-size: 15px;
+  font-weight: 700;
+  color:#fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+}
+
+.sub-menu {
   background-color: pink;
-  position:absolute;
-  display:none;
+  position: absolute;
+  display: none;
 }
 
 /* 비주얼 */
