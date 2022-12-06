@@ -44,7 +44,6 @@ body {
 .header {
   background: #fff;
   padding: 0 30px; /*위아래  왼쪽오른쪽*/
-  height: 15vh;
   border-radius: 0 0 15px 15px / 0 0 50px 50px;
   position: relative;
 }
