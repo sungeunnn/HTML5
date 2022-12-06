@@ -3,31 +3,42 @@
 @import url(./reset.css);
 
 /*기본 스타일*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+html{
+  font-size: 10px;
+}
 /* 링크 스타일 */
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
 
 /* 본문 스타일 */
 body {
-  color:#000;
+  /* em, rem 단위 사용해보기*/
+  font-size: 1.4rem;
+  color: #212121;
   background-color: #ccc;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-
-
 /* 레이아웃 */
-.header, .visual, .main, .slogan, .footer-inner {
+.header,
+.visual,
+.main,
+.slogan,
+.footer-inner {
   width: 940px;
   margin: 0 auto;
 }
-
 
 /* 헤더 */
 .header {
@@ -39,37 +50,42 @@ body {
 }
 
 /* 로고 */
-.logo{
-  position:absolute;
+.logo {
+  position: absolute;
   top: 45px;
   left: 60px;
 }
 
 /* 텍스트 링크 모음 */
-.member{
-  background-color: aqua;
+.member {
   text-align: right;
   padding: 4px 0;
+  /* position 속성을 활용하여, .member 영역을 오른쪽으로 10px 만큼 이동하기 */
+  /* position: relative;
+  right: -10px; */
+  /* transform 속성을 활용하여, .member 영역으로 오른쪽으로 10px 만큼 이동하기 */
+  transform : translateX(10px);
+
 }
 
 /* 텍스트 링크 li */
 .member li {
-  display:inline-block;
+  display: inline-block;
 }
 
 .member a {
-  background-color: coral;
-  padding: 6px 10px ;
+
+  padding: 6px 10px;
   display: inherit;
   text-transform: uppercase;
 }
 
-/* 마지막  li요소에 포함된 padding 값에서 오른쪽 padding 값을 0으로*/
+/* 마지막  li요소에 포함된 padding 값에서 오른쪽 padding 값을 0으로
 .member li:last-child a{
   padding-right: 0;
-}
+} */
 
-.divider{
+.divider {
   margin-right: 4px;
 }
 
@@ -83,11 +99,11 @@ body {
 .main {
   background: lightgreen;
   height: 50vh;
-  display:flow-root; 
-  padding:0 15px;
+  display: flow-root;
+  padding: 0 15px;
 }
 
-.group{
+.group {
   margin: 0 15px;
   float: left;
 }
@@ -115,7 +131,7 @@ body {
   background: gray;
 }
 /*푸터 이너*/
-.footer-inner{
+.footer-inner {
   background: silver;
   height: 15vh;
 }
