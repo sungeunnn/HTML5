@@ -1,19 +1,17 @@
-@charset "utf-8";
+@import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
-@import url(./fontello.css);
 
-/* 숨긴 콘텐츠 */
+/* 숨김 콘텐츠 */
 .a11y-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-/*기본 스타일*/
+/* 기본 스타일 */
 *,
 *::before,
 *::after {
@@ -23,6 +21,7 @@
 html {
   font-size: 10px;
 }
+
 /* 링크 스타일 */
 a {
   color: inherit;
@@ -31,7 +30,7 @@ a {
 
 /* 본문 스타일 */
 body {
-  /* em, rem 단위 사용해보기*/
+  /* em, rem 단위를 사용해보기 */
   font-size: 1.4rem;
   color: #212121;
   background: #ccc
@@ -55,8 +54,8 @@ body {
 /* 헤더 */
 .header {
   background: #fff;
-  padding: 0 30px; /*위아래  왼쪽오른쪽*/
-  border-radius: 0 0 15px 15px / 0 0 50px 50px;
+  padding: 0 30px;
+  border-radius: 0 0 15px 15px;
   position: relative;
 }
 
@@ -72,6 +71,10 @@ body {
 .member {
   text-align: right;
   padding: 4px 0;
+  /* position 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
+  /* position: relative;
+  right: -10px; */
+  /* transform 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
   transform: translateX(10px);
 }
 
@@ -86,8 +89,8 @@ body {
   text-transform: uppercase;
 }
 
-/* 마지막  li요소에 포함된 padding 값에서 오른쪽 padding 값을 0으로
-.member li:last-child a{
+/* 마지막 li 요소에 포함된 a 요소를 선택하여 오른쪽 padding 값을 0으로 재정의 하는 방법 */
+/* .member li:last-child a {
   padding-right: 0;
 } */
 
@@ -105,7 +108,6 @@ body {
   background: #e85e2c
     linear-gradient(
       to bottom,
-      #1e5799 0%,
       #ef9126 0%,
       #e85e2c 35%,
       #e85e2c 70%,
@@ -126,7 +128,7 @@ body {
   border-left: 2px solid #fff;
 }
 
-/*구체성 점수*/
+/* 구체성 -> 10점 */
 .menu-button {
   border: 0;
   background: transparent;
@@ -138,7 +140,7 @@ body {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
-/*구체성 점수 20점*/
+/* 구체성 -> 20점 */
 .is-active .menu-button {
   color: #ff0;
 }
@@ -151,14 +153,14 @@ body {
 
 .sub-menu {
   position: absolute;
-  display: none;
   top: 47px;
+  display: none;
   padding: 4px 0;
 }
 
 .menu-html,
 .menu-css,
-.menu-standars {
+.menu-standards {
   left: 0;
 }
 
@@ -174,8 +176,7 @@ body {
 }
 
 .sub-menu li {
-  display: inline;
-  padding-left: 1em;
+  display: inline-block;
 }
 
 .sub-menu a::before {
@@ -189,29 +190,27 @@ body {
   content: "\e801";
 }
 
-.sub-menu a:hover,
-.sub-menu a:focus {
-  color: red;
-}
-
 .sub-menu a {
   display: inline-block;
   padding: 6px 0;
 }
 
-/* 비주얼 */
+.sub-menu a:hover,
+.sub-menu a:focus {
+  color: #f00;
+}
 
-/*at sign rule*/
+/* 비주얼 */
 @keyframes moveEffect {
   0% {
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.2);
-    transform: translate(0,0);
+    color: rgba(0, 0, 0, 0);
+    transform: translate(0, 0);
   }
   100% {
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
-    transform: translate(400px, 750px);
+    transform: translate(400px, 75px);
   }
 }
 
@@ -230,7 +229,7 @@ body {
   display: inline-block;
 }
 
-/*메인*/
+/* 메인 */
 .main {
   background: lightgreen;
   height: 50vh;
@@ -256,12 +255,13 @@ body {
   width: 190px;
 }
 
-/*슬로건*/
+/* 슬로건 */
 .slogan {
   background: skyblue;
   height: 10vh;
+  clear: both;
 }
-/*푸터*/
+/* 푸터 */
 .footer {
   background: #ccc
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
