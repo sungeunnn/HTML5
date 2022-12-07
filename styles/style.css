@@ -3,7 +3,7 @@
 @import url(./reset.css);
 @import url(./fontello.css);
 
-/* 숨긴 콘텐츠 */ 
+/* 숨긴 콘텐츠 */
 .a11y-hidden {
   position: absolute;
   width: 1px;
@@ -190,19 +190,44 @@ body {
 }
 
 .sub-menu a:hover,
-.sub-menu a:focus{
-  color:red;
+.sub-menu a:focus {
+  color: red;
 }
 
-.sub-menu a{
+.sub-menu a {
   display: inline-block;
   padding: 6px 0;
 }
 
 /* 비주얼 */
+
+/*at sign rule*/
+@keyframes moveEffect {
+  0% {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.2);
+    transform: translate(0,0);
+  }
+  100% {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    transform: translate(400px, 750px);
+  }
+}
+
 .visual {
   background: orange;
-  height: 10vh;
+  height: 120px;
+  position: relative;
+}
+
+.visual-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: coral;
+  animation-name: moveEffect;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
 }
 
 /*메인*/
