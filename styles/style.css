@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url(./normalize.css);
 @import url(./reset.css);
-@import url(./fonts.css);
+@import url(./fontello.css);
 
 /* 숨긴 콘텐츠 */ 
 .a11y-hidden {
@@ -179,8 +179,9 @@ body {
 }
 
 .sub-menu a::before {
-  content: "\e805";
   font-family: "fontello";
+  content: "\e805";
+  margin-right: 0.5rem;
 }
 
 .sub-menu a:hover::before,
