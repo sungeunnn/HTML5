@@ -207,6 +207,10 @@ body {
     color: rgba(0, 0, 0, 0);
     transform: translate(0, 0);
   }
+  50%{
+    font-size:36px;
+    color:rgba(0,0,0,0.6);
+  }
   100% {
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
@@ -226,6 +230,7 @@ body {
   animation-name: moveEffect;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
   display: inline-block;
 }
 
