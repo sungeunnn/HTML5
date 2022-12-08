@@ -33,12 +33,17 @@ body {
   /* em, rem 단위를 사용해보기 */
   font-size: 1.4rem;
   color: #212121;
-  background: #ccc
-    linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    /* background-color: #ccc;
+    background-image: url(./images/bg_flower.png),linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);;
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 0, 0 0; */
+    background: url(./images/bg_flower.png) no-repeat 50% 0,
+    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
 }
 
 /* 레이아웃 */
@@ -219,19 +224,20 @@ body {
 }
 
 .visual {
-  background: orange;
+  /* background: orange; */
   height: 120px;
   position: relative;
 }
 
 .visual-text {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: coral;
+  /* background-color: coral; */
   animation-name: moveEffect;
   animation-duration: 2000ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-  display: inline-block;
+  /* display: inline-block; */
+  position:absolute;
 }
 
 /* 메인 */
