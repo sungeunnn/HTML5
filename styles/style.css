@@ -351,7 +351,7 @@ body {
   width: 4em;
 }
 .login-form input {
-  border-radius: 2px;
+  border-radius: 5px;
   width: 90px;
   height: 25px;
   border: 1px solid grey;
@@ -376,9 +376,40 @@ body {
 
 .sign {
   padding-top: 5px;
-  display: flex;
+  /* float */
+  /* overflow: auto; */
+
+  /* flex */
+  /* display: flex;
   justify-content: space-between;
+  flex-flow: row nowrap; */
 }
+
+/* float */
+.sign::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+
+.sign li:first-child{
+  float:left;
+}
+
+  /* float */
+.sign li:last-child{
+  float:right;
+}
+
+  /* float:left; */
+/* .sign:last-child{
+  padding-right: 35px;
+} */
+
+  /* inline-block */
+/* .sign li{
+  display: inline-block;
+} */
 
 .sign a {
   font-size: 12px;
