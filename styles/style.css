@@ -3,7 +3,8 @@
 @import url(./reset.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -38,12 +39,13 @@ body {
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    /* background-color: #ccc;
+  /* background-color: #ccc;
     background-image: url(./images/bg_flower.png),linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);;
     background-repeat: no-repeat, repeat;
     background-position: 50% 0, 0 0; */
-    background: url(./images/bg_flower.png) no-repeat 50% 0,
-    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%) repeat 0 0;
+  background: url(./images/bg_flower.png) no-repeat 50% 0,
+    #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%)
+      repeat 0 0;
 }
 
 /* 레이아웃 */
@@ -212,9 +214,9 @@ body {
     color: rgba(0, 0, 0, 0);
     transform: translate(0, 0);
   }
-  50%{
-    font-size:36px;
-    color:rgba(0,0,0,0.6);
+  50% {
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
   }
   100% {
     font-size: 24px;
@@ -229,23 +231,24 @@ body {
   position: relative;
 }
 
-@keyframes fadeEffect{
-  0%{
+@keyframes fadeEffect {
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
 
-.visual::before,.visual::after{
-  content:"";
-  position:absolute;
+.visual::before,
+.visual::after {
+  content: "";
+  position: absolute;
   height: 100%;
   width: 100%;
-  top:0;
-  left:0;
-  
+  top: 0;
+  left: 0;
+
   /* animation-name: fadeEffect;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
@@ -253,23 +256,23 @@ body {
   animation: fadeEffect 2000ms alternate infinite;
 }
 
-.visual::before{
+.visual::before {
   /* background-image: ,;
   background-repeat: no-repeat;
   background-position: 0 -10px, 600px 0;  */
 
   background: url(./images/ani_flower_01.png) no-repeat 0 -10px,
-  url(./images/ani_flower_02.png) no-repeat 600px 0;
+    url(./images/ani_flower_02.png) no-repeat 600px 0;
   animation-delay: 1000ms;
 }
 
-.visual::after{
+.visual::after {
   /* background-image: url(./images/ani_flower_03.png), url(./images/ani_flower_04.png);
   background-repeat: no-repeat;
   background-position: 300px 0, 800px 0; */
 
   background: url(./images/ani_flower_03.png) no-repeat 300px 0,
-  url(./images/ani_flower_04.png) no-repeat 800px 0;
+    url(./images/ani_flower_04.png) no-repeat 800px 0;
 }
 
 .visual-text {
@@ -280,7 +283,7 @@ body {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   /* display: inline-block; 사용말고 absolute가 더 나은 이유?*/
-  position:absolute;
+  position: absolute;
 }
 
 /* 메인 */
@@ -298,8 +301,7 @@ body {
 }
 
 .group1 {
-  width:250px;
-
+  width: 250px;
 }
 .group2 {
   background-color: salmon;
@@ -318,10 +320,75 @@ body {
   padding: 10px;
 }
 
-.login-title{
-  color:yellow;
+.login-title {
+  color: yellow;
   font-size: 17px;
   text-indent: 1rem;
+  font-weight: 700;
+}
+
+.login-form {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.login-form fieldset {
+  position: relative;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+.login-form input {
+  border-radius: 2px;
+  width: 90px;
+  height: 25px;
+  border: 1px solid grey;
+  padding: 1px 1px 1px 5px;
+  margin-bottom: 5px;
+}
+
+.login-button {
+  position: absolute;
+  padding:0 10px;
+  height: 55px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  top: 0;
+  right: 1px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+
+
+.sign {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign a {
+  font-size: 12px;
+}
+
+.sign a::before {
+  font-family: "fontello";
+  content: "\e803";
+  margin-right: 0.5rem;
+  color:orangered;
 }
 
 
