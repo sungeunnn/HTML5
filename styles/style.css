@@ -549,10 +549,72 @@ body {
   border-radius: 3px;
   padding: 0 10px;
   font-size: 1.2rem;
+  
 }
 
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position:relative;
+}
 
+.tab-list{
+  display:flex;
+  flex-flow: row nowrap;
+}
 
+.tab{
+  height:30px;
+  padding: 0 15px;
+  background-color: #ccc;
+  color:#333;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #aaa;
+}
+
+.tab.is-select{
+  border-color: orangered;
+  border-bottom: none;
+  background-color: #fff;
+  color:orangered;
+}
+
+.board-list{
+ margin-top:15px;
+}
+
+.board-list li{
+  display: flex;
+  justify-content: space-between;
+  /* line-height: 30px; */
+  margin-left: 10px;
+  margin:15px 0px 15px 10px;
+}
+
+.board-list a{
+  width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon-plus::before{
+  color:green;
+}
+
+.board-more{
+  position:absolute ;
+  right: 0;
+  top:0;
+}
+
+.tab-panel{
+  display:none;
+}
+
+.is-select.tab-panel{
+  display: block;
+}
 
 /* 슬로건 */
 .slogan {
