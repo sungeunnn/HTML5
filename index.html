@@ -192,15 +192,25 @@
             <li><a href="/">아이디/비밀번호 찾기</a></li>
           </ul>
         </section>
-        <h2 class="a11y-hidden"> 유효성 검사 배너</h2>
+        <h2 class="a11y-hidden">유효성 검사 배너</h2>
         <ul class="validation-list">
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer" title="마크업 유효성검사 사이트로 이동(새창)">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="마크업 유효성검사 사이트로 이동(새창)"
+            >
               W3C Markup Validation
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer" title="마크업 유효성검사 사이트로 이동(새창)">
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="마크업 유효성검사 사이트로 이동(새창)"
+            >
               CSS Validation Service
             </a>
           </li>
@@ -215,7 +225,8 @@
                 <img src="./assets/web_standards.gif" alt="W3C 로고" />
               </dd>
               <dd class="term-list-brief">
-                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준
+                규격은...
               </dd>
             </div>
             <div class="cross">
@@ -224,27 +235,64 @@
                 <img src="./assets/web_standards.gif" alt="W3C 로고" />
               </dd>
               <dd class="term-list-brief">
-                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은...
+                W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준
+                규격은...
               </dd>
             </div>
           </dl>
         </section>
       </div>
-      
+
       <div class="group group2">
         <h2 class="a11y-hidden">검색</h2>
-      <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class="search-form">
-        <fieldset>
-          <legend>검색 폼</legend>
-          <div class="search-form-inner">
-            <div class="form-group">
-              <label for="search" class="form-group-label"><span class="icon-search" aria-hidden="true"></span>자료검색</label>
-              <input type="search" id="search" class="form-group-input" required placeholder="검색어를 입력하세요. 예)HTML5" />
+        <form
+          method="POST"
+          action="https://formspree.io/seulbinim@gmail.com"
+          class="search-form"
+        >
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="search-form-inner">
+              <div class="form-group">
+                <label for="search" class="form-group-label"
+                  ><span class="icon-search" aria-hidden="true"></span
+                  >자료검색</label
+                >
+                <input
+                  type="search"
+                  id="search"
+                  class="form-group-input"
+                  required
+                  placeholder="검색어를 입력하세요. 예)HTML5"
+                />
+              </div>
+              <button type="submit" class="search-button button-fill button">
+                검색
+              </button>
             </div>
-            <button type="submit" class="button-fill button">검색</button>
+          </fieldset>
+        </form>
+
+        <div class="board">
+          <ul class="tab-list" role="tablist">
+            <li role="none"><button type="button" class="tab">자료실</button></li>
+            <li role="none"><button type="button" class="tab">공지사항</button></li>
+          </ul>
+
+          <div class="notice tab-panel" role="tabpanel">
+            <h2 class="a11y-hidden">공지사항</h2>
+            <ul class="board-list"></ul>
+              <a href="/" class="board-more icon-plus">더보기</a>
           </div>
-        </fieldset>
-      </form>
+
+          
+          <div class="archive tab-panel" role="tabpanel">
+            <h2 class="a11y-hidden">자료실</h2>
+            <ul class="board-list"></ul>
+              <a href="/" class="board-more icon-plus">더보기</a>
+          </div>
+        </div>
+
       </div>
 
 
