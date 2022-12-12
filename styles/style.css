@@ -470,7 +470,7 @@ body {
 .term-list{
   margin-top: 10px;
 }
-.term div {
+.term-list div {
   display: flow-root;
   margin-top: 10px;
 }
@@ -488,10 +488,10 @@ body {
   float:left;
 }
 .term-list-brief {
-  margin-top: 4px;
+  margin-top: 5px;
   width:140px;
   float:right;
-  line-height: 18px;
+  line-height: 1.5;
   font-weight: 500;
 }
 
