@@ -1,0 +1,16 @@
+
+.gradient-effect{
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.accent-color{
+  color: orangered;
+  font-weight: 700;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

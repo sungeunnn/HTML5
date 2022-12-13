@@ -1,6 +1,7 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,
@@ -698,6 +699,8 @@ body {
   right:-8px;
   padding:8px;
 }
+
+/* 신규 이벤트 및 관련 사이트 */
 
 /* 슬로건 */
 .slogan {
