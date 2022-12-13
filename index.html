@@ -12,7 +12,9 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./js/main.js" defer></script>
+    <!-- <script src="./js/main.js" defer></script> -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/menu-tab.js"></script>
   </head>
   <body>
     <header class="header">
@@ -275,14 +277,37 @@
 
         <div class="board">
           <div class="tab-list" role="tablist">
-            <button type="button" class="tab is-select" aria-selected="true" aria-controls="notice" id="noticeButton">공지사항</button>
-            <button type="button" class="tab" aria-selected="false" aria-controls="archive" id="archiveButton">자료실</button>
+            <button
+              type="button"
+              class="tab is-select"
+              aria-selected="true"
+              aria-controls="notice"
+              id="noticeButton"
+            >
+              공지사항
+            </button>
+            <button
+              type="button"
+              class="tab"
+              aria-selected="false"
+              aria-controls="archive"
+              id="archiveButton"
+            >
+              자료실
+            </button>
           </div>
 
-          <div class="notice tab-panel is-select" role="tabpanel" id="notice" aria-labelledby="noticeButton">
+          <div
+            class="notice tab-panel is-select"
+            role="tabpanel"
+            id="notice"
+            aria-labelledby="noticeButton"
+          >
             <ul class="board-list">
               <li>
-                <a class="icon-stop" href="/">HTML의 모든 것을 알려주마 샘플 활용법</a>
+                <a class="icon-stop" href="/"
+                  >HTML의 모든 것을 알려주마 샘플 활용법</a
+                >
                 <time datetime="2022-12-12T13:53:45">2022.12.12</time>
               </li>
               <li>
@@ -294,47 +319,91 @@
                 <time datetime="2022-12-12T13:53:45">2022.12.12</time>
               </li>
               <li>
-                <a class="icon-stop" href="/">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+                <a class="icon-stop" href="/"
+                  >서버 점검으로 인한 사이트 이용안내 입니다.</a
+                >
                 <time datetime="2022-12-12T13:53:45">2022.12.12</time>
               </li>
               <li>
-                <a class="icon-stop" href="/">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+                <a class="icon-stop" href="/"
+                  >여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어
+                  봅시다.</a
+                >
                 <time datetime="2022-12-12T13:53:45">2022.12.12</time>
               </li>
             </ul>
-              <a href="/" class="board-more icon-plus" aria-labelledby="noticeButton">더보기</a>
+            <a
+              href="/"
+              class="board-more icon-plus"
+              aria-labelledby="noticeButton"
+              >더보기</a
+            >
           </div>
 
-          
-          <div class="archive tab-panel" role="tabpanel" id="notice" aria-labelledby="archiveButton">
+          <div
+            class="archive tab-panel"
+            role="tabpanel"
+            id="notice"
+            aria-labelledby="archiveButton"
+          >
             <ul class="board-list">
-                <li>
-                  <a class="icon-stop" href="/">디자인 사이트 링크 모음</a>
-                  <time datetime="212-21T13:53:45">2022.12.21</time>
-                </li>
-                <li>
-                  <a class="icon-stop" href="/">웹 접근성 관련 자료 모음</a>
-                  <time datetime="2022-12-21T13:53:45">2022.12.21</time>
-                </li>
-                <li>
-                  <a class="icon-stop" href="/">예제 샘플 응용해보기</a>
-                  <time datetime="2022-12-21T13:53:45">2022.12.21</time>
-                </li>
-                <li>
-                  <a class="icon-stop" href="/">웹 접근성 향상을위한 국가 표준 기술 가이드라인</a>
-                  <time datetime="2022-12-21T13:53:45">2022.12.21</time>
-                </li>
-                <li>
-                  <a class="icon-stop" href="/">로얄티 프리 이미지 자료</a>
-                  <time datetime="2022-12-21T13:53:45">2022.12.21</time>
-                </li>    
+              <li>
+                <a class="icon-stop" href="/">디자인 사이트 링크 모음</a>
+                <time datetime="212-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">웹 접근성 관련 자료 모음</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">예제 샘플 응용해보기</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/"
+                  >웹 접근성 향상을위한 국가 표준 기술 가이드라인</a
+                >
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">로얄티 프리 이미지 자료</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
             </ul>
-              <a href="/" class="board-more icon-plus" aria-labelledby="archiveButton">더보기</a>
+            <a
+              href="/"
+              class="board-more icon-plus"
+              aria-labelledby="archiveButton"
+              >더보기</a
+            >
           </div>
         </div>
 
+        <section class="news">
+          <h2 class="news-title">새소식</h2>
+          <a href="/" class="news-link">
+            <article class="news-item">
+              <h3 class="news-item-title">W3C 사이트가 리뉴얼 되었습니다.</h3>
+              <time class="news-item-date" datetime="2022-12-13T09:31:23"
+                >2022.12.13</time
+              >
+              <p class="news-item-brief">
+                디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다
+                최신 정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어
+                있습니다.
+              </p>
+              <figure class="news-item-thumbnail">
+                <img
+                  src="assets/news.gif"
+                  alt="W3C 사이트가 HTML5 발표 후 새롭게 리뉴얼 된 모습"
+                />
+                <figcaption>W3C 리뉴얼</figcaption>
+              </figure>
+            </article>
+          </a>
+          <a href="/" class="icon-plus news-more more" title="새소식">더보기</a>
+        </section>
       </div>
-
 
       <div class="group group3">그룹3</div>
     </main>
