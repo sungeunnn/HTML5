@@ -766,7 +766,7 @@ body {
   display:flex;
   flex-flow: row nowrap;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .related-list a{
@@ -776,7 +776,7 @@ body {
 
 .related-list:hover,
 .related-list:focus {
-  height: 145px;
+  height: 147px;
   padding: 10px 0;
 }
 
