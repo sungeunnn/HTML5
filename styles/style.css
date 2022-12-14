@@ -10,9 +10,12 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
 /* 링크 스타일 */
-a{
-  color:inherit;
+a {
+  color: inherit;
   text-decoration: none;
 }
 /* * {
@@ -23,6 +26,7 @@ a{
 body {
   color: #212121;
   background-color: #ccc;
+  font-size: 1.4rem;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
@@ -50,8 +54,6 @@ body {
   background-color: pink;
 }
 
-
-
 /* 비주얼 */
 .visual {
   background: orange;
@@ -60,18 +62,15 @@ body {
 
 /* 메인 */
 .main {
-  background:#fff;
+  background: #fff;
   min-height: 450px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 30px;
+  padding: 30px 15px;
   display: flow-root;
 }
 
-.group{
-  float:left;
+.group {
+  float: left;
+  margin: 0 15px;
 }
 
 .group1 {
@@ -84,6 +83,55 @@ body {
 
 .group3 {
   width: 190px;
+}
+
+/* 신규이벤트 및 인기사이트 */
+.gradient-effect {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+.accent-color {
+  color: orangered;
+}
+.text-xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* 인기사이트 */
+.margin-top-default {
+  margin-top: 20px;
+}
+
+.event-button-wrapper {
+  background-color: yellow;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.event-button {
+  width: 19px;
+  height: 18px;
+  border: 0;
+  padding: 0;
+  text-indent: -999px;
+  background: aquamarine url(./images/back_forward.png) no-repeat;
+}
+
+.event-button-next {
+  background-position: 100% 0;
+}
+
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+
+.event-thumbnail {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #ccc;
 }
 
 /*슬로건*/
