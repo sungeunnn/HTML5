@@ -804,33 +804,34 @@ body {
   font-size: 1.2rem;
   margin-right: 5px;
   display: inline-block;
-  width:1.5em;
+  width: 1.5em;
   text-align: center;
   line-height: 1.5;
 }
 
-
-.up, .down, .stop{
-  width:9px;
+.up,
+.down,
+.stop {
+  width: 9px;
   height: 11px;
   display: inline-block;
 
   background: url(./images/rank.png) no-repeat;
 
   position: absolute;
-  right:0;
+  right: 0;
   top: 50%;
   margin-top: -6px;
   /* transform:translate(-50%, -50%); */
-  
+
   /* background: url(""); */
 }
 
-.down{
+.down {
   background-position-y: 100%;
 }
 
-.stop{
+.stop {
   background-position-y: 50%;
 }
 
@@ -844,22 +845,22 @@ body {
 /* 슬로건 */
 .slogan {
   clear: both;
-  position:relative;
+  position: relative;
   padding: 15px 100px 15px 180px;
 }
-.slogan-title{
-  position:absolute;
+.slogan-title {
+  position: absolute;
   width: 110px;
   height: 83px;
   text-align: center;
   line-height: 83px;
-  bottom:-25px;
+  bottom: -25px;
   left: 35px;
 }
 
-.slogan-title::after{
+.slogan-title::after {
   content: "";
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -867,14 +868,14 @@ body {
   background: url(./images/coffee.png) no-repeat;
 }
 
-.slogan-content{
+.slogan-content {
   color: darkolivegreen;
 }
-.slogan-content q::after{
-  content:"";
+.slogan-content q::after {
+  content: "";
 }
-.slogan-content q::before{
-  display:inline-block;
+.slogan-content q::before {
+  display: inline-block;
   font-size: 3rem;
   transform: translateY(5px);
 }
@@ -882,9 +883,44 @@ body {
 .footer {
   background: #ccc
     linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+  height:120px;
+  display: flex;
 }
 /*푸터 이너*/
 .footer-inner {
-  background: silver;
-  height: 15vh;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap:20px;
+}
+
+.footer-logo{
+  margin:0 20px;
+}
+
+.footer-inner-wrapper {
+  flex:1 1 auto;
+}
+
+.guide-list{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: rgb(119, 119, 119);
+  color:#fff;
+  height: 35px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.guide-list li{
+  padding:5px;
+}
+
+.badge-wrapper{
+  margin-top: -10px;
+}
+
+.badge-wrapper img{
+  margin-right: 3px;
 }
